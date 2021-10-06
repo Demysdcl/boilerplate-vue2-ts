@@ -1,0 +1,28 @@
+{
+  "snowman-import": {
+    "scope": "javascript, typescript",
+    "prefix": "sml-import",
+    "body": "import ${1:component} from '@/${2:folder}/${1:component}'",
+    "description": "import with alias"
+  },
+  "vue-template": {
+    "scope": "vue",
+    "prefix": "sml-vue-template",
+    "body": [
+      "<script lang=\"ts\">",
+      "/* eslint-disable @typescript-eslint/explicit-module-boundary-types */",
+      "export default {",
+      "\tdata: () => ({ ${1:key}: ${2:value} })",
+      "}",
+      "</script>",
+      "",
+      "<template>",
+      "\t<div></div>",
+      "</template>",
+      "",
+      "<style scoped lang=\"scss\">",
+      "</style>",
+    ],
+    "description": "Basic template to vue file"
+  }
+}
